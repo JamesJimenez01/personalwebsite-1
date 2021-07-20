@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Comapatible" content="ie=edge">
+	<title>Home Page</title>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+<style type="text/css">
+	
+	.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>	
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="logo">
+			<h1>SampleWeb</h1>
+		</div>
+
+			<ul class="nav-links">
+				<li><a class="" href="index.html">Home</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				
+				<li><a href="skills.html">Gallery</a></li>
+			</ul>
+	 	<div class="container" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		</div>
+	</nav>
+	<h2 class="w3-center">Sample Taken Photo</h2>
+<div class="w3-main w3-content" style="max-width:1600px;">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="img/pic/1 (1).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (2).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (3).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="img/pic/1 (4).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (5).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (6).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="img/pic/1 (7).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (8).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (9).jpg" style="width:100%" onclick="onClick(this)"alt="Click">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img/pic/1 (10).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (11).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+      <img src="img/pic/1 (12).jpg" style="width:100%" onclick="onClick(this)" alt="Click">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+<footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="background-color: #4d0026;">@2021</footer>
+
+	
+</body>
+</html>
+<script src="js/nav.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>

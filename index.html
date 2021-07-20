@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Comapatible" content="ie=edge">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="logo">
+			<h1>SampleWeb</h1>
+		</div>
+
+			<ul class="nav-links">
+				<li><a class="" href="index.html">Home</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				
+				<li><a href="skills.html">Gallery</a></li>
+			</ul>
+	 	<div class="container" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+		</div>
+	</nav>
+<div class="w3-content" style="max-width:2000px;">
+	<!-- Automatic Slideshow Images -->
+	<img class="w3-hide-large" src="img/photo-1519602985774-5ca448b50061.jpg" width="100%">
+  <div class="mySlides w3-display-container w3-center  w3-hide-small">
+    <img src="img/cover1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32  w3-hide-small">
+      <h3>Destin Sparks</h3>
+      <p><b>Photography is the story I fail to put into words.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center w3-hide-small">
+    <img src="img/cover2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Ansel Adams</h3>
+      <p><b>When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center w3-hide-small">
+    <img src="img/cover3.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32  w3-hide-small">
+      <h3>Robert Frank</h3>
+      <p><b>There is one thing the photograph must contain, the humanity of the moment.</b></p>    
+    </div>
+  </div>
+</div>
+<footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="background-color: #4d0026;">@2021</footer>	
+</body>
+</html>
+<script src="js/nav.js"></script>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
