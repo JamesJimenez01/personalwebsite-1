@@ -9,17 +9,93 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<style type="text/css">
+		
+.badge-active-noo {
+  color: #fff;
+  background-color: green;
+  width:120px;
+}
+.badge-away-noo {
+  color: #fff;
+  background-color: orange;
+  width:120px;
+}
+.badge-out-noo {
+  color: #fff;
+  background-color: red;
+  width:120px;
+}
+.noo-6 {
+  
+   max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; 
+
+}
+
+.noo-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    
+}
+.noo-7 {
+  
+   max-width: 80%;
+  padding-right: 15px;
+  padding-left: 15px; 
+
+}
+
+.noo-7 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    
+}
+
+.noo-padding-30{
+	margin-bottom:30px
+}
+.noo-padding-20{
+	padding:20px
+}
+.noo-bg-lg-p-s{
+	background-image: linear-gradient(#4d0026,white, skyblue);
+}
+.noo-bg-lg-p-sss{
+	background-image: linear-gradient(skyblue,white, skyblue);
+}
+.noo-bg-lg-p-ss{
+	background-image: linear-gradient(skyblue,white, #4d0026);
+}
+
+.noo-bg-white{
+	background-color: white;
+}
+.noo-card-box{
+	
+	border-radius:10px;
+	-webkit-box-shadow:0 0 28px rgba(0,0,0,.08);
+	box-shadow:0 0 28px rgba(0,0,0,.08)
+}
+.noo-height-100-p{
+	height:100%
+}
+
+	</style>
 	
 </head>
 <body>
@@ -27,80 +103,89 @@
 		<div class="logo">
 			<h1>SampleWeb</h1>
 		</div>
-
+		<div>
 			<ul class="nav-links">
 				<li><a class="" href="index.html">Home</a></li>
 				<li><a href="profile.html">Profile</a></li>
 				
 				<li><a href="skills.html">Gallery</a></li>
 			</ul>
-	 	<div class="container" onclick="myFunction(this)">
+	 	<div class="w3-right container" onclick="myFunction(this)">
 			  <div class="bar1"></div>
 			  <div class="bar2"></div>
 			  <div class="bar3"></div>
 		</div>
+		</div>
 	</nav>
 <div class="w3-content" style="max-width:2000px;">
-	<!-- Automatic Slideshow Images -->
-	<img class="w3-hide-large" src="img/photo-1519602985774-5ca448b50061.jpg" width="100%">
-  <div class="mySlides w3-display-container w3-center  w3-hide-small">
-    <img src="img/cover1.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32  w3-hide-small">
-      <h3>Destin Sparks</h3>
-      <p><b>Photography is the story I fail to put into words.</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center w3-hide-small">
-    <img src="img/cover2.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Ansel Adams</h3>
-      <p><b>When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center w3-hide-small">
-    <img src="img/cover3.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32  w3-hide-small">
-      <h3>Robert Frank</h3>
-      <p><b>There is one thing the photograph must contain, the humanity of the moment.</b></p>    
-    </div>
-  </div>
+
+<div style="padding-top:100px;"></div>
+<div class="noo-row  "  >
+	<div class="noo-column-half  " >
+		<img src="profile-removebg-preview.png" style="width: 100%; border-radius: 50%; ">	
+	</div>
+	<div class="noo-column-half " style="padding-left:3%;">
+	<div class="noo-6 noo-padding-30 " style="padding: 20px;">
+<div class=" noo-padding-20 noo-card-box noo-height-100-p noo-bg-lg-p-s" style="">
+   <center>
+		<h2 class=""> About Me </h2>
+    </center>
+		<span class="noo-name "><b>Name: </b> <i style="font-size: 20px;"> Niño Noriel Emmanuel G. Trigo</i></span><br>
+		<span class="noo-name "><b>Address: </b> <i style="font-size: 20px;"> Pangasinan</i></span><br>
+		<span class="noo-name "><b>Age: </b> <i style="font-size: 20px;"> 19</i></span><br>
+		<span class="noo-name "><b>Gender: </b> <i style="font-size: 20px;"> Male</i></span><br>
+		<span class="noo-name "><b>Status: </b> <i style="font-size: 20px;"> Single</i></span><br>
+	
+	</div>	
+	</div>
+
+	<div class="noo-6 noo-padding-30 " style="padding: 20px;">
+<div class=" noo-padding-20 noo-card-box noo-height-100-p noo-bg-lg-p-sss" style="">
+
+<h2>Education</h2>
+<p><b>College</b><br>
+Bachelor of Science and Information Technology<br>
+<i>2021</i><br>
+
+<b>Senior High School</b><br>
+General Academic Strand<br>
+Estanza National High School<br>
+<i>2018</i><br>
+
+<b>Junior High Scool</b><br>
+Westside Montessori Centrum<br>
+<i>2016</i><br>
+<b>Elementary School</b><br>
+Westside Montessori Centrum<br>
+<i>2012</i><br>
+</p>
 </div>
-<footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="background-color: #4d0026;">@2021</footer>	
+	
+</div>
+<div class="noo-6 noo-padding-30 " style="padding: 20px;">
+<div class=" noo-padding-20 noo-card-box noo-height-100-p noo-bg-lg-p-ss" style="">
+	<h2>Skills</h2>
+	<div style="border: solid black 3px; background-color: black;">
+	<img src="https://c.ndtvimg.com/2020-05/tpj5o4f8_cooking-_625x300_02_May_20.jpg" style="width: 100%;">
+	<p style="color:white;text-align: center; padding-top: 10px;">cooking</p>
+	</div>
+	<div style="padding-top: 10px;"></div>
+	<div style="border: solid black 3px; background-color: black;">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXSAa_SMB3d2wmez6L57OpuhCKVM2WiMqzAXPbGZquwlnrTUSWtzrHOApikgOIX93WNc&usqp=CAU" style="width: 100%;">
+	<p style="color:white;text-align: center; padding-top: 10px;">driving</p>
+	</div>
+</div>
+	
+</div>
+</div>
+	
+</div>
+
+<div style="padding-bottom:150px;"></div>
+
+</div>
+<footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="background-color: #4d0026;">@2021</footer>
+	
 </body>
 </html>
 <script src="js/nav.js"></script>
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
